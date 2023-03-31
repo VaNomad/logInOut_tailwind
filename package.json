@@ -1,0 +1,29 @@
+{
+  "name": "loginout_tailwind",
+  "version": "0.0.1",
+  "description": "tailwind setup test trying supabase connection",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaNomad/logInOut_tailwind.git"
+  },
+  "keywords": [
+    "setup",
+    "test-repo",
+    "tailwind",
+    "supabase"
+  ],
+  "author": "Sjur Hassel <sjur.hassel@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VaNomad/logInOut_tailwind/issues"
+  },
+  "homepage": "https://github.com/VaNomad/logInOut_tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
