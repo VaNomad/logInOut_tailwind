@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         brightRed: 'hsl(12, 88%, 59%)',
