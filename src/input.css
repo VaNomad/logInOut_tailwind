@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.onhover:hover {
-  transition-duration: 1s;
+#logo:hover {
+  transition: all 1s;
+  cursor: crosshair; 
 }
 
 .logo {
-  cursor: crosshair; 
+  
 }
 
