@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/js/index.mjs" defer type="module"></script>
-  <script src="/js/hover.mjs" defer type="module"></script>
+  <script src="/js/utils.mjs" defer type="module"></script>
   <link rel="stylesheet" href="dist/output.css">
   <title>LogInOut</title>
 </head>
@@ -13,32 +13,33 @@
 
   <header>
     <!-- navbar and menu -->
-    <nav>
-    <div class="flex justify-between items-center py-6 px-10 container mx-auto">
-      <div class="logo hover:animate-pulse hover:transition">
-        <a href="/home.html">
-          <img id="logo" src="/assets/vectors/sjurio-logo-black copy.png" alt="" class="w-20 frame reverse">
-        </a>
-      </div>
-      <div>
-        <div class="hover:cursor-pointer sm:hidden">
-          <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-tr from-indigo-600 to-green-600"></span>
-          <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-tr from-indigo-600 to-green-600"></span>
-          <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-tr from-indigo-600 to-green-600"></span>
+    <nav class="h-[9vh]">
+      <div class="flex justify-between items-center py-3 px-4 container mx-auto">
+        <div class="logo">
+          <a href="/index.html">
+            <img id="logo" src="/assets/vectors/sjurio-logo-black copy.png" alt="" class="w-20 reverse hover:cursor-crosshair transition-all duration-1000">
+          </a>
         </div>
-        <div class="flex items-center">
-          <ul class="sm:flex space-x-4 hidden items-center">
-            <li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">Home</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">About</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">Services</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">Products</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">Contact</a></li>
-          </ul>
-  
+        <div>
+          <!-- Hamburger -->
+          <div class="hover:cursor-pointer sm:hidden">
+            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+          </div>
+          <!-- Nav Items -->
+          <div class="flex items-center">
+            <ul class="sm:flex space-x-4 hidden items-center gap-16">
+              <li><a href="/index.html" class="navlink text-gray-700 hover:text-indigo-600 text-md">Home</a></li>
+              <li><a href="/about.html" class="text-gray-700 hover:text-indigo-600 text-md">About</a></li>
+              <li><a href="/products.html" class="text-gray-700 hover:text-indigo-600 text-md">Products</a></li>
+              <li><a href="/contact.html" class="text-gray-700 hover:text-indigo-600 text-md">Contact</a></li>
+            </ul>
+            <!-- Nav Buttons -->
           <div class="md:flex items-center hidden space-x-4 ml-8 lg:ml-12">
-            <h1 class="text-text-gray-600  py-2 hover:cursor-pointer hover:text-indigo-600">LOGIN</h1>
-            <h1 class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-tr from-indigo-600 to-green-600 hover:shadow-emerald-600 hover:shadow-md">SIGNUP</h1>
-            <h1 class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-tr from-fuchsia-400 to-purple-800 hover:shadow-emerald-600 hover:shadow-md">Logout</h1>
+            <a href="/login.html" class="navlink text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-green-400 to-green-900 hover:shadow-zinc-600 hover:shadow-md">LOGIN</a>
+            <a href="/signup.html" class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-indigo-500 to-indigo-800 hover:shadow-zinc-600 hover:shadow-md">SIGNUP</a>
+            <a href="#" class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-orange-400 to-orange-900 hover:shadow-zinc-600 hover:shadow-md">LOGOUT</a>
           </div>
         </div>
       </div>
@@ -79,7 +80,7 @@
         
       </div>
       <div class="p-5">
-        <button type="button" class="transition duration-200 bg-green-400 hover:bg-green-600 focus:bg-green-700 focus:shadow-sm focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">SignUp</button>
+        <a href="/signup.html"><button type="button" class="transition duration-200 bg-green-400 hover:bg-green-600 focus:bg-green-700 focus:shadow-sm focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">SignUp</button></a>
       </div>
         <div class="py-5">
         <div class="grid grid-cols-2 gap-1">
