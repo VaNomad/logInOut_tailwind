@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-#logo:hover {
-  transition: all 1s;
-  cursor: crosshair; 
+
+/* Nav Bar */
+a.navlink:is(:link, :active, :visited).active {
+  color: black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: none;
+  transition: all .5s;
 }
 
-.custom-tracking {
-  letter-spacing: 2px;
-}
 
