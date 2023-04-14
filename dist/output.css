@@ -990,6 +990,22 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[7rem\] {
+  font-size: 7rem;
+}
+
+.text-\[6rem\] {
+  font-size: 6rem;
+}
+
+.text-\[4rem\] {
+  font-size: 4rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1301,6 +1317,18 @@ a.navlink:is(:link, :active, :visited).active {
   .sm\:text-right {
     text-align: right;
   }
+
+  .sm\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+
+  .sm\:tracking-\[5px\] {
+    letter-spacing: 5px;
+  }
+
+  .sm\:text-\[\] {
+    color: ;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1332,10 +1360,30 @@ a.navlink:is(:link, :active, :visited).active {
     padding-left: 9rem;
     padding-right: 9rem;
   }
+
+  .md\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+
+  .md\:text-\[6rem\] {
+    font-size: 6rem;
+  }
+
+  .md\:tracking-\[5px\] {
+    letter-spacing: 5px;
+  }
+
+  .md\:text-\[\] {
+    color: ;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:ml-12 {
     margin-left: 3rem;
+  }
+
+  .lg\:text-\[6rem\] {
+    font-size: 6rem;
   }
 }
