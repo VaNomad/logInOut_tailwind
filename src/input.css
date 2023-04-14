@@ -14,4 +14,6 @@ a.navlink:is(:link, :active, :visited).active {
   transition: all .5s;
 }
 
-
+#menu {
+  z-index: 1;
+}
