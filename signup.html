@@ -19,20 +19,15 @@
       <div class="flex justify-between items-center py-3 px-4 container mx-auto">
         <div class="logo">
           <a href="/index.html">
-            <img id="logo" src="/assets/vectors/sjurio-logo-black copy.png" alt=""
-              class="w-20 reverse hover:cursor-crosshair transition-all duration-1000">
+            <img id="logo" src="/assets/vectors/sjurio-logo-black copy.png" alt="" class="w-20 hover:cursor-crosshair">
           </a>
         </div>
+
         <div>
-          <!-- Hamburger -->
-          <div class="hover:cursor-pointer sm:hidden">
-            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
-            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
-            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
-          </div>
-          <!-- Nav Items -->
+          <!-- Menu -->
           <div class="flex items-center">
-            <ul class="sm:flex space-x-4 hidden items-center gap-16">
+            <!-- Nav Links -->
+            <ul class="md:flex space-x-4 hidden items-center gap-16">
               <li><a href="/index.html" class="navlink text-gray-700 hover:text-indigo-600 text-md">Home</a></li>
               <li><a href="/about.html" class="text-gray-700 hover:text-indigo-600 text-md">About</a></li>
               <li><a href="/products.html" class="text-gray-700 hover:text-indigo-600 text-md">Products</a></li>
@@ -43,7 +38,35 @@
               <a href="/login.html"
                 class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-green-400 to-green-900 hover:shadow-zinc-600 hover:shadow-md">LOGIN</a>
               <a href="/signup.html"
-                class="navlink text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-indigo-500 to-indigo-800 hover:shadow-zinc-600 hover:shadow-md">SIGNUP</a>
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-indigo-500 to-indigo-800 hover:shadow-zinc-600 hover:shadow-md">SIGNUP</a>
+              <a href="#"
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-orange-400 to-orange-900 hover:shadow-zinc-600 hover:shadow-md">LOGOUT</a>
+            </div>
+          </div>
+
+          <!-- Hamburger -->
+          <button id="menu-btn" class="hamburger block md:hidden hover:cursor-pointer pt-3">
+            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+          </button>
+
+          <!-- Mobile menu -->
+          <div class="md:hidden">
+            <!-- Nav Links -->
+            <div id="menu"
+              class="absolute hidden flex-col justify-center items-center bg-white right-0 w-screen gap-12 px-52 py-20 mt-4">
+              <a href="/index.html" class="navlink text-gray-700 hover:text-indigo-600 text-md">Home</a>
+              <a href="/about.html" class="text-gray-700 hover:text-indigo-600 text-md">About</a>
+              <a href="/products.html" class="text-gray-700 hover:text-indigo-600 text-md">Products</a>
+              <a href="/contact.html" class="text-gray-700 hover:text-indigo-600 text-md">Contact</a>
+            </div>
+            <!-- Nav Buttons -->
+            <div class="md:flex items-center hidden space-x-4 ml-8 lg:ml-12">
+              <a href="/login.html"
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-green-400 to-green-900 hover:shadow-zinc-600 hover:shadow-md">LOGIN</a>
+              <a href="/signup.html"
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-indigo-500 to-indigo-800 hover:shadow-zinc-600 hover:shadow-md">SIGNUP</a>
               <a href="#"
                 class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-orange-400 to-orange-900 hover:shadow-zinc-600 hover:shadow-md">LOGOUT</a>
             </div>
@@ -53,79 +76,89 @@
     </nav>
   </header>
 
-  <!-- Signup Form -->
-  <div class="min-h-screen bg-gray-200 flex flex-col justify-center sm:py-12">
-    <!-- Outer Container -->
-    <div class="p-6 pt-0 xs:p-0 mx-auto md:w-full md:max-w-md">
-      <!-- Headline -->
-      <div>
-        <h1 class="font-sans text-center text-2xl mb-5">SIGN UP</h1>
-      </div>
-      <!-- Inner Container -->
-      <div class="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
-        <!-- Form -->
-        <div class="px-5 py-7">
-          <label class="font-semibold text-sm text-gray-600 pb-1 block">Name</label>
-          <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
-          <label class="font-semibold text-sm text-gray-600 pb-1 block">E-mail</label>
-          <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
-          <label class="font-semibold text-sm text-gray-600 pb-1 block">Password</label>
-          <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
-          <label class="font-semibold text-sm text-gray-600 pb-1 block">Phone</label>
-          <input type="tel" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+  <main>
+    <!-- Signup Form -->
+    <div class="min-h-screen bg-gray-200 flex flex-col justify-center sm:py-12">
+      <!-- Outer Container -->
+      <div class="p-6 pt-0 xs:p-0 mx-auto md:w-full md:max-w-md">
+        <!-- Headline -->
+        <div>
+          <h1 class="font-sans text-center text-2xl mb-5">SIGN UP</h1>
         </div>
-        <!-- Button -->
-        <div class="p-5">
-          <button type="button"
-            class="transition duration-200 bg-green-400 hover:bg-green-600 focus:bg-green-700 focus:shadow-sm focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">SignUp</button>
-        </div>
-        <!-- Form footer -->
-        <div class="py-5">
-          <div class="grid grid-cols-2 gap-1">
-            <div class="text-center sm:text-left whitespace-nowrap">
-              <!-- Forgot Password Button -->
-              <button
-                class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  class="w-4 h-4 inline-block align-text-top">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
-                </svg>
-                <span class="inline-block ml-1">Forgot Password</span>
-              </button>
-            </div>
-            <div class="text-center sm:text-right whitespace-nowrap">
-              <!-- Help Button -->
-              <button
-                class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  class="w-4 h-4 inline-block align-text-bottom	">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-                <span class="inline-block ml-1">Help</span>
-              </button>
+        <!-- Inner Container -->
+        <div class="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
+          <!-- Form -->
+          <div class="px-5 py-7">
+            <label class="font-semibold text-sm text-gray-600 pb-1 block">Name</label>
+            <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+            <label class="font-semibold text-sm text-gray-600 pb-1 block">E-mail</label>
+            <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+            <label class="font-semibold text-sm text-gray-600 pb-1 block">Password</label>
+            <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+            <label class="font-semibold text-sm text-gray-600 pb-1 block">Phone</label>
+            <input type="tel" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+          </div>
+          <!-- Button -->
+          <div class="p-5">
+            <button type="button"
+              class="transition duration-200 bg-green-400 hover:bg-green-600 focus:bg-green-700 focus:shadow-sm focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">SignUp</button>
+          </div>
+          <!-- Form footer -->
+          <div class="py-5">
+            <div class="grid grid-cols-2 gap-1">
+              <div class="text-center sm:text-left whitespace-nowrap">
+                <!-- Forgot Password Button -->
+                <button
+                  class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-4 h-4 inline-block align-text-top">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
+                  </svg>
+                  <span class="inline-block ml-1">Forgot Password</span>
+                </button>
+              </div>
+              <div class="text-center sm:text-right whitespace-nowrap">
+                <!-- Help Button -->
+                <button
+                  class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-4 h-4 inline-block align-text-bottom	">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                  <span class="inline-block ml-1">Help</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="py-5">
-        <div class="grid grid-cols-2 gap-1">
-          <div class="text-center sm:text-left whitespace-nowrap">
-            <!-- Back Button -->
-            <button
-              class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-200 focus:outline-none focus:bg-gray-300 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                class="w-4 h-4 inline-block align-text-top">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              <span class="inline-block ml-1">Back</span>
-            </button>
+        <div class="py-5">
+          <div class="grid grid-cols-2 gap-1">
+            <div class="text-center sm:text-left whitespace-nowrap">
+              <!-- Back Button -->
+              <button
+                class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-200 focus:outline-none focus:bg-gray-300 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  class="w-4 h-4 inline-block align-text-top">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span class="inline-block ml-1">Back</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
+
+  <footer>
+    <div class="h-[9vh] flex flex-col md:flex-row items-center md:justify-between md:px-36 justify-center border font-thin">
+      <h2>© 2023 - Noroff Supabase Case Study</h2>
+      <h2>Discord: <a href="">Sayeda</a><a href=""> Rohit </a><a href="">Sjur</a></h2>
+      <h2>mail: sarosj@thehomeoffice.com</h2>
+    </div>
+  </footer>
 
 </body>
 

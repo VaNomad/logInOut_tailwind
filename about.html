@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,69 +10,98 @@
   <link rel="stylesheet" href="dist/output.css">
   <title>LogInOut</title>
 </head>
+
 <body>
 
   <header>
     <!-- navbar and menu -->
     <nav class="h-[9vh]">
-    <div class="flex justify-between items-center py-3 px-4 container mx-auto">
-      <div class="logo">
-        <a href="/index.html">
-          <img id="logo" src="/assets/vectors/sjurio-logo-black copy.png" alt="" class="w-20 reverse hover:cursor-crosshair transition-all duration-1000">
-        </a>
-      </div>
-      <div>
-        <!-- Hamburger -->
-        <div class="hover:cursor-pointer sm:hidden">
-          <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
-          <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
-          <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+      <div class="flex justify-between items-center py-3 px-4 container mx-auto">
+        <div class="logo">
+          <a href="/index.html">
+            <img id="logo" src="/assets/vectors/sjurio-logo-black copy.png" alt="" class="w-20 hover:cursor-crosshair">
+          </a>
         </div>
-        <!-- Nav Items -->
-        <div class="flex items-center">
-          <ul class="sm:flex space-x-4 hidden items-center gap-16">
-            <li><a href="/index.html" class="text-gray-700 hover:text-indigo-600 text-md">Home</a></li>
-            <li><a href="/about.html" class="navlink text-gray-700 hover:text-indigo-600 text-md">About</a></li>
-            <li><a href="/products.html" class="text-gray-700 hover:text-indigo-600 text-md">Products</a></li>
-            <li><a href="/contact.html" class="text-gray-700 hover:text-indigo-600 text-md">Contact</a></li>
-          </ul>
-          <!-- Nav Buttons -->
-          <div class="md:flex items-center hidden space-x-4 ml-8 lg:ml-12">
-            <a href="/login.html" class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-green-400 to-green-900 hover:shadow-zinc-600 hover:shadow-md">LOGIN</a>
-            <a href="/signup.html" class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-indigo-500 to-indigo-800 hover:shadow-zinc-600 hover:shadow-md">SIGNUP</a>
-            <a href="#" class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-orange-400 to-orange-900 hover:shadow-zinc-600 hover:shadow-md">LOGOUT</a>
+
+        <div>
+          <!-- Menu -->
+          <div class="flex items-center">
+            <!-- Nav Links -->
+            <ul class="md:flex space-x-4 hidden items-center gap-16">
+              <li><a href="/index.html" class="text-gray-700 hover:text-indigo-600 text-md">Home</a></li>
+              <li><a href="/about.html" class="navlink text-gray-700 hover:text-indigo-600 text-md">About</a></li>
+              <li><a href="/products.html" class="text-gray-700 hover:text-indigo-600 text-md">Products</a></li>
+              <li><a href="/contact.html" class="text-gray-700 hover:text-indigo-600 text-md">Contact</a></li>
+            </ul>
+            <!-- Nav Buttons -->
+            <div class="md:flex items-center hidden space-x-4 ml-8 lg:ml-12">
+              <a href="/login.html"
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-green-400 to-green-900 hover:shadow-zinc-600 hover:shadow-md">LOGIN</a>
+              <a href="/signup.html"
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-indigo-500 to-indigo-800 hover:shadow-zinc-600 hover:shadow-md">SIGNUP</a>
+              <a href="#"
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-orange-400 to-orange-900 hover:shadow-zinc-600 hover:shadow-md">LOGOUT</a>
+            </div>
+          </div>
+
+          <!-- Hamburger -->
+          <button id="menu-btn" class="hamburger block md:hidden hover:cursor-pointer pt-3">
+            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+            <span class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-l from-indigo-600 to-green-600"></span>
+          </button>
+
+          <!-- Mobile menu -->
+          <div class="md:hidden">
+            <!-- Nav Links -->
+            <div id="menu"
+              class="absolute hidden flex-col justify-center items-center bg-white right-0 w-screen gap-12 px-52 py-20 mt-4">
+              <a href="/index.html" class="text-gray-700 hover:text-indigo-600 text-md">Home</a>
+              <a href="/about.html" class="navlink text-gray-700 hover:text-indigo-600 text-md">About</a>
+              <a href="/products.html" class="text-gray-700 hover:text-indigo-600 text-md">Products</a>
+              <a href="/contact.html" class="text-gray-700 hover:text-indigo-600 text-md">Contact</a>
+            </div>
+            <!-- Nav Buttons -->
+            <div class="md:flex items-center hidden space-x-4 ml-8 lg:ml-12">
+              <a href="/login.html"
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-green-400 to-green-900 hover:shadow-zinc-600 hover:shadow-md">LOGIN</a>
+              <a href="/signup.html"
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-indigo-500 to-indigo-800 hover:shadow-zinc-600 hover:shadow-md">SIGNUP</a>
+              <a href="#"
+                class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-r from-orange-400 to-orange-900 hover:shadow-zinc-600 hover:shadow-md">LOGOUT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Outer Container -->
+    <div class="bg-[url('/assets/images/R1-04418-0012.jpg')] bg-cover h-[82vh]">
+      <!-- Inner Container -->
+      <div class="flex items-center justify-center h-[80vh] container">
+        <!-- Text Box -->
+        <div class="flex items-center justify-center shadow-inner shadow-black p-5">
+          <div class="shadow-black shadow-lg px-8">
+            <h1 class="text-[8rem] tracking-[5px] text-white font-black">ABOUT</h1>
+          </div>
+          <div class="absolute z-1 left-30">
+            <h1 class="tracking-[9px] text-[7.8rem] text-teal-500 opacity-90 font-bold">ABOUT</h1>
           </div>
         </div>
       </div>
     </div>
-    </nav>
-  </header>
+  </main>
 
-<main>
-  <!-- Outer Container -->
-  <div class="bg-[url('/assets/images/R1-04418-0012.jpg')] bg-cover h-[82vh]">
-    <!-- Inner Container -->
-    <div class="flex items-center justify-center h-[80vh] container">
-      <!-- Text Box -->
-      <div class="flex items-center justify-center shadow-inner shadow-black p-5">
-        <div class="shadow-black shadow-lg px-8">
-          <h1 class="text-[8rem] tracking-[5px] text-white font-black">ABOUT</h1>
-        </div>
-        <div class="absolute z-1 left-30">
-          <h1 class="tracking-[9px] text-[7.8rem] text-teal-500 opacity-90 font-bold">ABOUT</h1>
-        </div>
-      </div>
+  <footer>
+    <div class="h-[9vh] flex flex-col md:flex-row items-center md:justify-between md:px-36 justify-center border font-thin">
+      <h2>© 2023 - Noroff Supabase Case Study</h2>
+      <h2>Discord: <a href="">Sayeda</a><a href=""> Rohit </a><a href="">Sjur</a></h2>
+      <h2>mail: sarosj@thehomeoffice.com</h2>
     </div>
-  </div>
-</main>
-
-<footer>
-  <div class="h-[9vh] flex items-center justify-between px-36 border font-thin">
-    <h2>© 2023 - sjur hassel</h2>
-    <h2>phone: 982 348 792</h2>
-    <h2>mail: sjur@hjemmekontoret.no</h2>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
