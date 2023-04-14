@@ -80,7 +80,7 @@
 
   <main>
     <!-- Signup Form -->
-    <div class="min-h-screen bg-gray-200 flex flex-col justify-center sm:py-12">
+    <div id="registerForm" class="min-h-screen bg-gray-200 flex flex-col justify-center sm:py-12">
       <!-- Outer Container -->
       <div class="p-6 pt-0 xs:p-0 mx-auto md:w-full md:max-w-md">
         <!-- Headline -->
@@ -92,13 +92,13 @@
           <!-- Form -->
           <div class="px-5 py-7">
             <label class="font-semibold text-sm text-gray-600 pb-1 block">Name</label>
-            <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+            <input type="text" name="name" required pattern="" title="" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
             <label class="font-semibold text-sm text-gray-600 pb-1 block">E-mail</label>
-            <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+            <input type="email" name="email" required pattern="" title="" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
             <label class="font-semibold text-sm text-gray-600 pb-1 block">Password</label>
-            <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+            <input type="password" name="password" required minlength="8" title="" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
             <label class="font-semibold text-sm text-gray-600 pb-1 block">Phone</label>
-            <input type="tel" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
+            <input type="tel" name="tel" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
           </div>
           <!-- Button -->
           <div class="p-5">
