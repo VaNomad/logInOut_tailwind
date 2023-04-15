@@ -17,3 +17,12 @@ a.navlink:is(:link, :active, :visited).active {
 #menu {
   z-index: 1;
 }
+
+/* registerForm */
+.help {
+  display: none;
+}
+
+input:invalid + .help {
+  display: block;
+}
