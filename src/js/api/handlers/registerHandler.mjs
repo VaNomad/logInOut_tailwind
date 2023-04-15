@@ -8,11 +8,9 @@ export function setRegisterFormListener() {
     const form = event.target;
     const formData = new FormData(form);
     const profile = Object.fromEntries(formData.entries());
-    const method = form.method;
-    const action = form.action;
 
     // console.log(profile);
 
-    register(profile, method, action);
+    register(profile);
   })
 }
