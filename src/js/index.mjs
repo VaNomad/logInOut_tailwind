@@ -1,4 +1,4 @@
-
+import * as handlers from "./api/handlers/index.mjs"
 
 async function router() {
   const path = window.location.pathname;
@@ -18,7 +18,7 @@ async function router() {
 
       return;
     case "/signup.html":
-
+      handlers.setRegisterFormListener();
       return;
     case "/login.html":
 
