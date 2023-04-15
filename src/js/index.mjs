@@ -1,4 +1,4 @@
-import * as handlers from "./api/handlers/index.mjs"
+import * as handlers from "./api/handlers/barrel.mjs";
 
 async function router() {
   const path = window.location.pathname;
